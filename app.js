@@ -8,8 +8,8 @@ const { randomUUID } = require("crypto");
 const port = 3040;
 const baseUrl = "https://chat.openai.com";
 const apiUrl = `${baseUrl}/backend-api/conversation`;
-const refreshInterval = 60000; // Interval to refresh token in ms
-const errorWait = 120000; // Wait time in ms after an error
+const refreshInterval = 600000; // Interval to refresh token in ms
+const errorWait = 40000; // Wait time in ms after an error
 
 // Initialize global variables to store the session token and device ID
 let token;
